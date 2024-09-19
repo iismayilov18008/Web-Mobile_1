@@ -21,7 +21,7 @@
 <br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jAy6NJ_D5vU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>salam</iframe>
 
-<p> FREE JAHREIN</p>
+<p> #FREEJAHREIN</p>
  <iframe width="560" height="315" src="https://www.youtube.com/embed/eQSTf8E43eI" frameborder="0" allow="allowfullscreen; autoplay; clipboard-write; encrypted-media; gyroscope picture" allowfullscreen>xello</iframe>
 
 
@@ -36,7 +36,41 @@
 
 <a href="#section1"> section 1 e kecid edin</a>
 <br>
-<h1 id="section2">salamlar</h1>
-<p>privet brat</p>
+<h1 id="section2">Online Forms</h1>
+
+<form id="myForm" action="mailto:iismayilov18008@ada.edu.az" method="post" enctype="text/plain">
+  
+  <!-- Full Name -->
+
+  <label for="name">Enter your full name: </label>
+  <input type="text" placeholder="For_Example" id="name" required>
+  <br><br>
+
+  <!-- Email Address -->
+  <label for="mailAddr">Enter your mail address: </label>
+  <input id="mail" placeholder="example@mail.ru" type="email" required>
+  <br><br>
+
+  <!-- Password -->
+  <label for="passwd">Enter Password: </label>
+  <input id="passwd" placeholder="Password" type="password" value="SecretValues" required>
+  <br><br>
+
+  <!-- Submit and Reset buttons -->
+  <input type="submit" value="Enter">
+  <input type="reset" value="Reset">
+</form>
+
+<!-- Sign Up Request Button -->
+<button>>>> SingUp Request <<<</button>
+
+<script>
+  document.getElementById('myForm').addEventListener('reset', function() {
+    document.getElementById('passwd').value = '';
+  });
+</script>
+
+
+
 
 <html>
