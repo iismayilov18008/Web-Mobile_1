@@ -1,76 +1,163 @@
 <!DOCTYPE html>
-<html>
-      <body>
-        <h1> Salam </h1>
-        <p>  Movies  </p>
-        
-      </body>
-      <hr>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Page</title>
+    <style>
+      /* Style for the video container to center it on the screen */
+      .video-container {
+          display: none; /* Hidden by default */
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1000; /* Make sure it's on top */
+          background-color: rgba(0, 0, 0, 0.8);
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      }
+      /* Fullscreen background when video is shown */
+      .overlay {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.7);
+          z-index: 999;
+      }
+    </style>
+</head>
+<body>
+    <h1> Salam </h1>
+    <p> Movies </p>
+    
+    <hr>
 
-      <h1 id="section1">>>Guide<<<</h1>
+    <h1 id="section1">>>Guide<<<</h1>
 
-      <a href="https://rezka.ag/" target="_blank">   Free-High-Quality-PirateWebSite  </a>
+    <a href="https://rezka.ag/" target="_blank">Free-High-Quality-PirateWebSite</a>
+    <br>
+    <a href="https://www.imdb.com/user/ur152628240/watchlist/?ref_=ext_shr_lnk" target="_blank">Here is my Waitlist <<</a>
+    <br>
+    <a href="https://rezka.ag/ua/series/fiction/8020-sorvigolova-2015.html" target="_blank">
+        <img src="daredevil.jpg" alt="Daredevil" width="300px">
+    </a>
+    <br>
 
-      <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jAy6NJ_D5vU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<a href="https://www.imdb.com/user/ur152628240/watchlist/?ref_=ext_shr_lnk" target="_blank"> Here is my Waitlist << </a>
-<br>
-<a href="https://rezka.ag/ua/series/fiction/8020-sorvigolova-2015.html" target="_blank" >
-  <img src ="daredevil.jpg" alt="Daredevil" width="300px"> 
-</a>
-<br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jAy6NJ_D5vU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>salam</iframe>
+    <p>#FREEJAHREIN</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eQSTf8E43eI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope picture" allowfullscreen></iframe>
 
-<p> #FREEJAHREIN</p>
- <iframe width="560" height="315" src="https://www.youtube.com/embed/eQSTf8E43eI" frameborder="0" allow="allowfullscreen; autoplay; clipboard-write; encrypted-media; gyroscope picture" allowfullscreen>xello</iframe>
+    <p>Services For Movie Review and Criticizing</p>
+    <ul>
+        <li><a href="https://www.imdb.com/" target="_blank">IMDB</a></li>
+        <li><a href="https://www.rottentomatoes.com/" target="_blank">Rotten Tomatoes</a></li>
+        <li><a href="https://www.metacritic.com/" target="_blank">MetaCritic</a></li>
+    </ul>
+
+    <a href="#section1">section 1 e kecid edin</a>
+
+    <br>
+    <h1 id="section2">Online Forms</h1>
+
+    <form id="myForm" action="mailto:iismayilov18008@ada.edu.az" method="post" enctype="text/plain">
+        <!-- Full Name -->
+        <label for="name">Enter your full name: </label>
+        <input type="text" placeholder="For_Example" id="name" required>
+        <br><br>
+
+        <!-- Email Address -->
+        <label for="mailAddr">Enter your mail address: </label>
+        <input id="mail" placeholder="example@mail.ru" type="email" required>
+        <br><br>
+
+        <!-- Password -->
+        <label for="passwd">Enter Password: </label>
+        <input id="passwd" placeholder="Password" type="password" value="SecretValues" required>
+        <br><br>
+
+        <!-- Submit and Reset buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <!-- Sign Up Request Button -->
+    <button>>>> SingUp Request <<<</button>
+
+    <!-- Trilogy Form -->
+    <form id="Triology">
+        <p>Choose one:</p>
+        <label for="preference">Lord Of The Rings Trilogy</label>
+        <input id="preference" type="checkbox">
+        <br>
+        <label for="pireference">Godfather Trilogy</label>
+        <input id="pireference" type="checkbox">
+        <br>
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <!-- Overlay and Video Container -->
+    <div id="overlay" class="overlay"></div>
+    <div id="videoContainer" class="video-container">
+        <iframe id="lotrVideo" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <button onclick="closeVideo()">Close Video</button>
+    </div>
+   <form>
+    <label for="salamqaqas">necesen:</label>
+    <input id="salamqaqas" type="text">
+    <input type="reset" id="salamqaqas" value="Reset"> 
+  </form>
 
 
- <p>Services For Movie Review and Critisizing</p>
-
-<ul>
-  <li><a href="https://www.imdb.com/" target="_blank">IMDB</a></li>
-  <li><a href="https://www.rottentomatoes.com/" target="_blank">Rotten Tomatoes</a></li>
-  <li><a href="https://www.metacritic.com/" target="_blank">MetaCritics</a></li>
-</ul>
-
-
-<a href="#section1"> section 1 e kecid edin</a>
-<br>
-<h1 id="section2">Online Forms</h1>
-
-<form id="myForm" action="mailto:iismayilov18008@ada.edu.az" method="post" enctype="text/plain">
   
-  <!-- Full Name -->
-
-  <label for="name">Enter your full name: </label>
-  <input type="text" placeholder="For_Example" id="name" required>
-  <br><br>
-
-  <!-- Email Address -->
-  <label for="mailAddr">Enter your mail address: </label>
-  <input id="mail" placeholder="example@mail.ru" type="email" required>
-  <br><br>
-
-  <!-- Password -->
-  <label for="passwd">Enter Password: </label>
-  <input id="passwd" placeholder="Password" type="password" value="SecretValues" required>
-  <br><br>
-
-  <!-- Submit and Reset buttons -->
-  <input type="submit" value="Enter">
-  <input type="reset" value="Reset">
-</form>
-
-<!-- Sign Up Request Button -->
-<button>>>> SingUp Request <<<</button>
-
-<script>
-  document.getElementById('myForm').addEventListener('reset', function() {
-    document.getElementById('passwd').value = '';
-  });
-</script>
 
 
+    <script>
+        // Function to handle trilogy selection
+        function submitForm() {
+            const lotr = document.getElementById('preference').checked;
+            const godfather = document.getElementById('pireference').checked;
+            let message = "You have selected: ";
 
+            if (lotr && godfather) {
+                message += "Both Lord Of The Rings and Godfather.";
+            } else if (lotr) {
+                message += "Lord Of The Rings. Great choice";
+                showVideo(); // Show the video if LOTR is selected
+            } else if (godfather) {
+                message += "Godfather, u stupid";
+            } else {
+                message += "None.";
+            }
 
-<html>
+            alert(message);
+        }
+
+        // Function to show the video
+        function showVideo() {
+            document.getElementById('lotrVideo').src = "https://www.youtube.com/embed/fjUO7xaUHJQ"; // Link to a LOTR video
+            document.getElementById('overlay').style.display = "block"; 
+            document.getElementById('videoContainer').style.display = "block";
+        }
+
+        // Function to close the video
+        function closeVideo() {
+            document.getElementById('lotrVideo').src = ""; // Stop the video
+            document.getElementById('overlay').style.display = "none";
+            document.getElementById('videoContainer').style.display = "none";
+        }
+
+        // Reset password field on form reset
+        document.getElementById('myForm').addEventListener('reset', function() {
+            document.getElementById('passwd').value = '';
+        });
+
+    </script>
+</body>
+</html>
