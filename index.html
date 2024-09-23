@@ -68,17 +68,17 @@
     <form id="myForm" action="mailto:iismayilov18008@ada.edu.az" method="post" enctype="text/plain">
         <!-- Full Name -->
         <label for="name">Enter your full name: </label>
-        <input type="text" placeholder="For_Example" id="name" required>
+        <input type="text" placeholder="For_Example" id="name" name="Fullname" required>
         <br><br>
 
         <!-- Email Address -->
         <label for="mailAddr">Enter your mail address: </label>
-        <input id="mail" placeholder="example@mail.ru" type="email" required>
+        <input id="mail" placeholder="example@mail.ru" name="mailAddr" type="email" required>
         <br><br>
 
         <!-- Password -->
         <label for="passwd">Enter Password: </label>
-        <input id="passwd" placeholder="Password" type="password" value="SecretValues" required>
+        <input id="passwd" placeholder="Password" name="Password" type="password" value="SecretValues" required>
         <br><br>
 
         <!-- Submit and Reset buttons -->
@@ -108,14 +108,45 @@
         <br>
         <button onclick="closeVideo()">Close Video</button>
     </div>
-   <form>
-    <label for="salamqaqas">necesen:</label>
-    <input id="salamqaqas" type="text">
-    <input type="reset" id="salamqaqas" value="Reset"> 
+
+    <form id="myForm" action="mailto:iismayilov18008@ada.edu.az" method="post" enctype="text/plain">
+      <label for="yourFavourite">Your favourite (Movie or TV-Show): </label>
+      <br>
+      <input id="yourFavourite" name="favourite" type="text">
+      
+      <input type="submit" value="Submit"> 
+      <input type="reset" value="Reset">
   </form>
+  <br>
 
 
-  
+    
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    </style>
+    <table>
+      <tr>
+        <th> TV-Show\Platform </th>
+        <th>IMDB</th>
+        <th>RottenTomatoes</th>
+        <th>MetaCritic</th>
+      </tr>
+      <tr>
+        <td>Breaking Bad</td>
+        <td>9.5&#9734; (2.2M)</td>
+        <td>96%</td>
+        <td>93%</td>
+      </tr>
+      <tr>
+        <td>Death Note</td>
+        <td>8.9&#9734; (394K)</td>
+        <td>100%</td>
+        <td>91%</td>
+      </tr>
+    </table>
 
 
     <script>
