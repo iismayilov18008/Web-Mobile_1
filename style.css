@@ -1,0 +1,51 @@
+body {
+    background-color: #59db9649; /* Example background color */
+    font-family: 'Open Sans', sans-serif; /* Apply Google Fonts */
+    width: 90%;
+    margin: 0 auto;
+    background-image: url("https://coolbackgrounds.io/images/backgrounds/white/white-triangle-369b8d2d.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+hr {
+    width: 100%;
+    border-width: 5px;
+    border-style: dotted;
+}
+#gandalf {
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    
+    transition: transform 0.3s;
+}
+#gandalf:hover {
+    transform: scale(1.1);   
+}
+.header-container {
+    
+    margin: 10px;
+    display: flex;               /*  flex den istifade ederey yan yana duzur*/
+    justify-content: space-between; /* birini en basa digerini en sora eliyerek aralarinda mesafe yaradir*/
+    align-items: center;         /* Dikey olarak ortalamak ucun istifade edilir */
+}
+
+.Lotr-Better {
+    background-image: url('background.png');
+    padding: 1px; /* Add padding */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    color: white;
+}
+#table111 {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px;
+}
+

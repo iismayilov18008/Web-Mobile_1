@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
     <title>Movie Page</title>
     <style>
-      /* Style for the video container to center it on the screen */
+      
       .video-container {
-          display: none; /* Hidden by default */
+          display: none; 
           position: fixed;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          z-index: 1000; /* Make sure it's on top */
+          z-index: 1000; 
           background-color: rgba(0, 0, 0, 0.8);
           padding: 20px;
           border-radius: 10px;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
       }
-      /* Fullscreen background when video is shown */
+      
       .overlay {
           display: none;
           position: fixed;
@@ -32,8 +33,12 @@
     </style>
 </head>
 <body>
-    <h1> Salam </h1>
+    <div class="header-container">
+    <h1> Ismayil Ismayilov </h1>
+   <a href="https://www.imdb.com/user/ur152628240/?ref_=nv_usr_prof_2" target="_blank"> <img id="gandalf" src="gandalf.png"> </a>
+</div>
     <p> Movies </p>
+    
     
     <hr>
 
@@ -61,8 +66,9 @@
     </ul>
 
     <a href="#section1">section 1 e kecid edin</a>
-
     <br>
+<div class="Lotr-Better">
+    
     <h1 id="section2">Online Forms</h1>
 
     <form id="myForm" action="mailto:iismayilov18008@ada.edu.az" method="post" enctype="text/plain">
@@ -117,6 +123,8 @@
       <input type="submit" value="Submit"> 
       <input type="reset" value="Reset">
   </form>
+</div>
+
   <br>
 
 
@@ -127,7 +135,7 @@
       border-collapse: collapse;
     }
     </style>
-    <table>
+    <table id="table111">
       <tr>
         <th> TV-Show\Platform </th>
         <th>IMDB</th>
