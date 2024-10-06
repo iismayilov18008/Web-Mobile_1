@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#flag {
+    width: 90vw;  
+    height: calc(90vw / 2); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#blue {
+    background-color: #00B5E2;
+    height: 33.33%;
+}
+
+#red {
+    background-color: #EF3340;
+    height: 33.33%;
+    position: relative;
+}
+
+#green {
+    background-color: #509E2F;
+    height: 33.33%;
+}
+
+#ay {
+    width: 10vw;  
+    height: 10vw;
+    border-radius: 50%;
+    background: #EF3340;
+    position: absolute;
+    top: 50%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    box-shadow: -1vw 0 0 0.7vw #fff;  
+}
+
+#ulduz {
+    width: 3.75vw;  
+    height: 0;
+    position: absolute;
+    top: 40%;
+    left: 50.5%;
+    border-top: solid 1.5vw #fff;
+    border-bottom: solid 1.5vw #fff;
+    border-left: solid 1.5vw transparent;
+    border-right: solid 1.5vw transparent;
+    transform: rotate(70deg);
+}
+
+#ulduz:before {
+    content: "";
+    width: 3.9vw;
+    height: 0;
+    position: absolute;
+    top: -1.5vw;
+    left: -1.5vw;
+    border-top: solid 1.5vw #fff;
+    border-bottom: solid 1.5vw #fff;
+    border-left: solid 1.5vw transparent;
+    border-right: solid 1.5vw transparent;
+    transform: rotate(90deg);
+}
+
+#daire {
+    width: 3.8vw;  
+    height: 3.8vw;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 49.5233%;
+    left: 54.19%;
+    transform: translate(-50%, -50%);
+}
